@@ -1,0 +1,32 @@
+<div class="my-3 bg-white shadow-sm rounded-xl">
+  <h6 class="p-3 mb-0 border-bottom border-gray">
+    <i class="fas fa-trophy"></i> Competitions
+  </h6>
+  <div class="px-3 pb-3">
+    {% if site.data.competition %}
+      <div class="row mt-3">
+        {% for comp in site.data.competition %}
+          <div class="col-md-6 mb-2">
+            <div class="d-flex align-items-start">
+              <div class="mr-3">
+                <i class="{{ comp.icon }} text-muted" style="width: 18px; text-align: center;"></i>
+              </div>
+              <div class="flex-grow-1">
+                <div class="font-weight-normal">{{ comp.name }}</div>
+                <div class="small text-muted">{{ comp.description }}</div>
+                {% if comp.rank %}
+                  <div class="small text-primary font-weight-bold">{{ comp.rank }}</div>
+                {% endif %}
+                {% if comp.date %}
+                  <div class="small text-muted font-italic">{{ comp.date }}</div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="text-muted mt-3">No competition information available.</p>
+    {% endif %}
+  </div>
+</div>

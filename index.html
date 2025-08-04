@@ -30,6 +30,10 @@ navbar_title: Home
     %}
 {% endif %}
 
+{% if site.data.display.homepage.show_competition %}
+    {% include widgets/competition_card.html %}
+{% endif %}
+
 {% if site.data.display.homepage.show_services %}
     {% include widgets/services_card.html %}
 {% endif %}

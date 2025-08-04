@@ -1,0 +1,23 @@
+- name: "Kaggle: CommonLit - Evaluate Student Summaries"
+  description: "Automatically assess summaries written by students in grades 3-12"
+  icon: "fas fa-medal"
+  rank: "silver medal (89/2064)"
+  date: "2023"
+  
+- name: "Kaggle: Benetech - Making Graphs Accessible"
+  description: "Use ML to create tabular data from graphs"
+  icon: "fas fa-medal"
+  rank: "bronze medal (99/608)"
+  date: "2023"
+
+- name: "Kaggle: Stable Diffusion - Image to Prompts"
+  description: "Deduce the prompts that generated our \"highly detailed, sharp focus, illustration, 3d renders of majestic, epic\" images"
+  icon: "fas fa-medal"
+  rank: "bronze medal (73/1231)"
+  date: "2023"
+
+- name: "Kaggle: Feedback Prize - English Language Learning"
+  description: "Evaluating language knowledge of ELL students from grades 8-12"
+  icon: "fas fa-medal"
+  rank: "silver medal (30/2654)"
+  date: "2022"
