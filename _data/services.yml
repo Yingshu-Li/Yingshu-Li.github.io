@@ -1,0 +1,15 @@
+- name: "Conference Review"
+  description: "MICCAI 2025, ICCV 2025"
+  icon: "fas fa-file-alt"
+  
+- name: "Journal Review"
+  description: "IEEE-TMI"
+  icon: "fas fa-journal-whills"
+  
+# - name: "Technical Consulting"
+#   description: "Providing technical expertise and consultation services"
+#   icon: "fas fa-cogs"
+  
+# - name: "Academic Mentoring"
+#   description: "Mentoring undergraduate and graduate students in research projects"
+#   icon: "fas fa-chalkboard-teacher"

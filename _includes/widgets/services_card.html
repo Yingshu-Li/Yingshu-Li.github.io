@@ -1,0 +1,26 @@
+<div class="my-3 bg-white shadow-sm rounded-xl">
+  <h6 class="p-3 mb-0 border-bottom border-gray">
+    <i class="fas fa-hands-helping"></i> Services
+  </h6>
+  <div class="px-3 pb-3">
+    {% if site.data.services %}
+      <div class="row mt-3">
+        {% for service in site.data.services %}
+          <div class="col-md-6 mb-2">
+            <div class="d-flex align-items-start">
+              <div class="mr-3">
+                <i class="{{ service.icon }} text-muted" style="width: 18px; text-align: center;"></i>
+              </div>
+              <div class="flex-grow-1">
+                <div class="font-weight-normal">{{ service.name }}</div>
+                <div class="small text-muted">{{ service.description }}</div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="text-muted mt-3">No services information available.</p>
+    {% endif %}
+  </div>
+</div>

@@ -26,5 +26,28 @@ navbar_title: Home
         include widgets/publication_card.html 
         publications=pubs
         title='<i class="fas fa-star"></i> Selected Publications'
+        limit=site.data.display.homepage.num_selected_publications
     %}
 {% endif %}
+
+{% if site.data.display.homepage.show_services %}
+    {% include widgets/services_card.html %}
+{% endif %}
+
+{% if site.data.display.homepage.show_teaching %}
+    {% include widgets/teaching_card.html %}
+{% endif %}
+
+<!-- ClustrMaps visitor tracking -->
+<div class="text-center mt-4 mb-3">
+    <div style="max-width: 400px; margin: 0 auto;">
+        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=2bb9d6&w=a&t=n&d=I3EQUYZtK-x1ZLxqq172i6zk1-yBjwg3-ipSDQjIk5A&co=ffffff'></script>
+    </div>
+</div>
+
+<style>
+#clustrmaps {
+    transform: scale(0.9);
+    transform-origin: center;
+}
+</style>
