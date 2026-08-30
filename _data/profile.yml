@@ -22,13 +22,15 @@ linkedin: yingshu-li
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Yingshu Li (李英舒) is currently a third-year PhD student at the University of Sydney, supervised by <a href="https://sites.google.com/view/lupingzhou" target="_blank">Prof. Luping Zhou</a>. During his PhD, he has also been fortunate to receive mentorship from <a href="https://sites.google.com/view/lei-hs-wang" target="_blank">Prof. Lei Wang</a> and <a href="https://lingqiao-adelaide.github.io/lingqiaoliu.github.io/" target="_blank">Prof. Lingqiao Liu</a>. His research focuses on Medical AI, Large Language Models, and Vision-Language Models, particularly radiology report generation. Prior to his PhD, he received his Master’s degree from the University of Sydney.
+    I'm Yingshu Li (李英舒), a final-year Ph.D. candidate at the University of Sydney, supervised by <a href="https://sites.google.com/view/lupingzhou" target="_blank">Prof. Luping Zhou</a>. During my PhD, I have also been fortunate to receive mentorship from <a href="https://sites.google.com/view/lei-hs-wang" target="_blank">Prof. Lei Wang</a> and <a href="https://lingqiao-adelaide.github.io/lingqiaoliu.github.io/" target="_blank">Prof. Lingqiao Liu</a>. My research centres on multi-modal large language models (MLLMs), computer vision, and medical imaging analysis — in particular radiology report generation and large multimodal embedding models — with work published at CVPR, AAAI, ECCV, ACM MM, MICCAI, IEEE TMI, MedIA, and Meta-Radiology. Prior to my PhD, I received my Master’s degree from the University of Sydney.
+  </p>
+
+  <p>
+    Alongside my academic work, I interned at TikTok (Trust &amp; Safety), building scalable LLM training frameworks and training MLLM-based embedding models for large-scale video content governance. I am currently on the job market for <strong>Applied Scientist, Research Scientist, and Machine Learning Engineer</strong> roles, and am equally open to <strong>postdoctoral</strong> positions.
   </p>
 
   <strong>Happy to research chats and collabs — feel free to email me!</strong>
 portrait_url: /assets/images/badges/self.jpg
-portrait_caption: >-
-  Photo by Shirley.Ye.
 
 education:
 - name: The University of Sydney
@@ -43,6 +45,10 @@ education:
   date: Aug. 2020 - Aug. 2022
 
 experience:
+- name: TikTok
+  logo: /assets/images/badges/tiktok.png
+  position: Machine Learning Engineer Intern
+  date: Nov. 2025 - May 2026
 - name: University of Illinois Urbana-Champaign
   logo: /assets/images/badges/uiuc-logo-square.webp
   position: Research Intern

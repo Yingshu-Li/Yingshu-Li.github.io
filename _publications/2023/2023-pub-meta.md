@@ -4,8 +4,6 @@ date:           2023-11-04 00:01:00 +0800
 selected:       true
 pub:            "Meta-Radiology"
 pub_date:       "2024"
-abstract: >-
-  We systematically evaluated the multimodal capabilities of GPT-4V in medical image analysis, focusing on its performance across various tasks such as VQA, Report Generation, and Visual Grounding. 
 authors:
 - Yunyi Liu*
 - <strong>Yingshu Li*</strong>

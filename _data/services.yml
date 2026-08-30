@@ -1,9 +1,9 @@
 - name: "Conference Review"
-  description: "MICCAI 2025, ICCV 2025"
+  description: "CVPR, NeurIPS, ECCV, ICCV, MICCAI"
   icon: "fas fa-file-alt"
   
 - name: "Journal Review"
-  description: "IEEE-TMI"
+  description: "IEEE TMI, IEEE JBHI, MedIA, Meta-Radiology"
   icon: "fas fa-journal-whills"
   
 # - name: "Technical Consulting"
