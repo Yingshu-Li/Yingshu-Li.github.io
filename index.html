@@ -52,8 +52,9 @@ main_class: home-layout
     <section class="home-section" id="research" aria-labelledby="research-title">
         <div class="section-heading">
             <h2 id="research-title">Selected Papers</h2>
-            <a href="{{ '/publications' | relative_url }}">All publications</a>
+            <div class="section-tools"><span class="scroll-hint" id="papers-scroll-hint">Scroll to browse</span><a href="{{ '/publications' | relative_url }}">All publications</a></div>
         </div>
+        <div class="section-scroll papers-scroll" role="region" aria-labelledby="research-title" aria-describedby="papers-scroll-hint" tabindex="0">
         {% assign years = site.publications | where: 'selected', true | group_by: 'pub_date' | sort: 'name' | reverse %}
         {% assign remaining = 8 %}
         {% for year in years %}
@@ -64,10 +65,12 @@ main_class: home-layout
             {% assign remaining = remaining | minus: papers.size %}
             {% if remaining <= 0 %}{% break %}{% endif %}
         {% endfor %}
+        </div>
     </section>
 
     <section class="home-section" id="news" aria-labelledby="news-title">
-        <div class="section-heading"><h2 id="news-title">News</h2></div>
+        <div class="section-heading"><h2 id="news-title">News</h2><span class="scroll-hint" id="news-scroll-hint">Scroll to browse</span></div>
+        <div class="section-scroll news-scroll" role="region" aria-labelledby="news-title" aria-describedby="news-scroll-hint" tabindex="0">
         {% assign news = site.news | sort: 'date' | reverse %}
         {% assign visible_news = 8 %}
         <ul class="timeline">
@@ -85,6 +88,7 @@ main_class: home-layout
             </ul>
         </details>
         {% endif %}
+        </div>
     </section>
 
     {% if site.posts.size > 0 %}
