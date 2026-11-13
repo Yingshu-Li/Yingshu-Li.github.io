@@ -141,23 +141,24 @@ a { transition: color 150ms ease; }
 .section-heading > a { font-size: .875rem; font-weight: 600; text-decoration: none; }
 .section-heading > a:hover { text-decoration: underline; }
 
-.publication { padding-block: .8rem; border-bottom: 1px solid var(--rule); }
-.publication-title { margin-block: 0 .3rem; font-size: 1rem; font-weight: 600; line-height: 1.45; text-wrap: pretty; }
+.publication { padding-block: .6rem; border-bottom: 1px solid var(--rule); }
+.publication-title { margin-block: 0 .15rem; font-size: 1rem; font-weight: 600; line-height: 1.4; text-wrap: pretty; }
 .publication-title a { color: inherit; text-decoration-color: var(--rule); }
 .publication-title a:hover { color: var(--accent); text-decoration-color: currentColor; }
-.publication-venue { margin-top: .2rem; color: var(--accent); font-size: .84rem; font-weight: 500; }
+.publication-venue { margin-top: .1rem; color: var(--accent); font-size: .84rem; font-weight: 500; line-height: 1.5; }
 .publication-note { margin-left: .65rem; color: var(--muted); font-size: .8rem; font-weight: 400; white-space: nowrap; }
-.publication-authors { color: var(--muted); font-size: .84rem; line-height: 1.6; }
+.publication-authors { color: var(--muted); font-size: .84rem; line-height: 1.5; }
 .publication-authors strong { color: var(--ink); }
 .publication-authors mark { background: none; color: inherit; }
 .publication-links {
     display: flex;
     flex-wrap: wrap;
     gap: .2rem 1rem;
-    margin-top: .35rem;
+    margin-top: .15rem;
     padding: 0;
     list-style: none;
-    font-size: .9rem;
+    font-size: .85rem;
+    line-height: 1.5;
     font-weight: 600;
 }
 
@@ -170,7 +171,7 @@ a { transition: color 150ms ease; }
 }
 .timeline-date, .muted { color: var(--muted); }
 .timeline-date { font-size: .85rem; font-variant-numeric: tabular-nums; }
-.timeline li { align-items: baseline; font-size: .925rem; }
+.timeline li { grid-template-columns: 6rem minmax(0, 1fr); gap: .1rem 1rem; padding-block: .3rem; align-items: baseline; font-size: .925rem; line-height: 1.5; }
 .experience-list li, .post-list li { grid-template-columns: 10rem minmax(0, 1fr); }
 .more-details { margin-top: .85rem; }
 .more-details summary { width: fit-content; cursor: pointer; color: var(--accent); font-weight: 600; }
