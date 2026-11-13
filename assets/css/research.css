@@ -101,6 +101,7 @@ a { transition: color 150ms ease; }
 .profile-links a { text-decoration: none; }
 .profile-links a:hover { text-decoration: underline; }
 .email-copy {
+    display: inline-grid;
     appearance: none;
     border: 0;
     padding: 0;
@@ -112,6 +113,8 @@ a { transition: color 150ms ease; }
     min-width: 3.5em;
     text-underline-offset: .18em;
 }
+.email-copy::after { content: attr(data-copy-email); visibility: hidden; grid-area: 1 / 1; }
+.email-copy [data-copy-label] { grid-area: 1 / 1; }
 .email-copy:hover { text-decoration: underline; }
 .email-copy-fallback { margin-top: .6rem; font-size: .8125rem; color: var(--muted); }
 .email-copy-fallback label { display: block; }

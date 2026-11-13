@@ -17,9 +17,9 @@
             fallback.hidden = true;
             label.textContent = 'Copied';
             status.textContent = 'Email address copied to clipboard.';
-            resetTimer = setTimeout(() => { label.textContent = 'Email'; }, 2500);
+            resetTimer = setTimeout(() => { label.textContent = button.dataset.copyEmail; }, 2500);
         } catch {
-            label.textContent = 'Email';
+            label.textContent = button.dataset.copyEmail;
             fallback.hidden = false;
             status.textContent = 'Automatic copying is unavailable. Select and copy the email address below.';
             address.focus();
