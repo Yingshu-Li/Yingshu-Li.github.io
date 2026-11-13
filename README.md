@@ -86,3 +86,7 @@ description: "A short summary for the blog index."
 ```
 
 Write the article below the front matter. Jekyll adds it to `/blog/` and shows the three newest posts on the homepage. Use `_drafts/` for unpublished posts and preview them locally with `bundle exec jekyll serve --drafts`.
+
+## Adding a news update
+
+Add a Markdown file in `_news/` with `title` and `date` in its front matter. An optional `summary` provides a shorter version for the homepage; without it, the homepage displays `title`. Keep the full announcement in `title` and use `summary` for the paper name and venue or the main event. The eight newest updates appear first, with older entries under “Earlier updates.”

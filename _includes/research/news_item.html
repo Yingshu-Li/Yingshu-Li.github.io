@@ -1,4 +1,4 @@
 <li>
     <time class="timeline-date" datetime="{{ include.entry.date | date: '%Y-%m-%d' }}">{{ include.entry.date | date: '%b %Y' }}</time>
-    <div>{{ include.entry.title }}</div>
+    <div>{{ include.entry.summary | default: include.entry.title }}</div>
 </li>

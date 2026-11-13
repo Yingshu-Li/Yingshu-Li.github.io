@@ -22,8 +22,8 @@ linkedin: yingshu-li
 description: "Yingshu Li is a PhD candidate at the University of Sydney working on AI agents, AI4Health, multimodal large language models, and radiology vision-language systems."
 research_interests:
   - "AI Agents & AI4Health"
-  - "Multimodal Large Language Model"
-  - "Radiology Vision-language System"
+  - "Multimodal Large Language Models"
+  - "Radiology Vision–Language Systems"
 short_bio: >-
   <p>
     I’m a final-year PhD candidate in the School of Electrical and Computer Engineering at the University of Sydney, advised by
@@ -33,17 +33,16 @@ short_bio: >-
     I also received my master’s degree from the University of Sydney.
   </p>
   <p>
-    My research interests span <strong>multimodal large language models, AI agents, and AI for healthcare</strong>.
-    I’m interested in how AI systems understand multimodal information, follow instructions, and reason across tasks and domains.
-    My work includes multimodal embeddings, model evaluation, and medical vision–language systems, with radiology report generation as one application.
-    More broadly, I aim to develop capable and reliable multimodal AI for both healthcare and real-world applications.
+    I work on <strong>multimodal large language models</strong>, with research interests in <strong>AI agents and AI for healthcare</strong>.
+    I study how models connect visual and textual information, follow instructions, and reason across tasks.
+    My research covers multimodal embeddings and model evaluation, with applications in medical vision–language systems and video understanding.
   </p>
   <p>
-    Alongside my academic research, I interned with <strong>TikTok Trust &amp; Safety</strong>, where I built scalable LLM training frameworks and trained multimodal video embedding models for large-scale content governance.
-    I also spent time as a research intern at the University of Illinois Urbana-Champaign.
+    At <strong>TikTok Trust &amp; Safety</strong>, I worked as a machine learning engineer intern, building scalable LLM training frameworks and training multimodal video embedding models for content governance.
+    Previously, I was a research intern at the University of Illinois Urbana-Champaign.
   </p>
   <p>
-    I’m currently exploring opportunities as an <strong>Applied Scientist, Research Scientist, or Machine Learning Engineer</strong>, as well as <strong>postdoctoral positions</strong>.
+    I’m seeking <strong>Applied Scientist, Research Scientist, and Machine Learning Engineer</strong> roles, and I’m also open to <strong>postdoctoral positions</strong>.
   </p>
   <p class="collaboration-note">
     I welcome <a href="mailto:yingshu.li@sydney.edu.au">research discussions and collaborations</a> in multimodal learning, AI agents, and AI4Health.
@@ -54,23 +53,23 @@ education:
 - name: The University of Sydney
   logo: /assets/images/badges/sydlogo.png
   position: >- 
-    School of Electrical and Computer Engineering <br/>
-    Ph.D. Student
-  date: Jun. 2023 - present
+    PhD candidate <br/>
+    School of Electrical and Computer Engineering
+  date: Jun 2023 – present
 - name: The University of Sydney
   logo: /assets/images/badges/sydlogo.png
-  position: M.S in Electrical and Information Engineering
-  date: Aug. 2020 - Aug. 2022
+  position: Master’s in Electrical and Information Engineering
+  date: Aug 2020 – Aug 2022
 
 experience:
 - name: TikTok
   logo: /assets/images/badges/tiktok.png
   position: Machine Learning Engineer Intern
-  date: Nov. 2025 - May 2026
+  date: Nov 2025 – May 2026
 - name: University of Illinois Urbana-Champaign
   logo: /assets/images/badges/uiuc-logo-square.webp
   position: Research Intern
-  date: Apr. 2023 - Jul. 2023
+  date: Apr 2023 – Jul 2023
 
 awards:
 - name: University of Sydney International Scholarship (USydIS)

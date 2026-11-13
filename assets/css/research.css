@@ -95,7 +95,7 @@ a { transition: color 150ms ease; }
     gap: .3rem 1.25rem;
     list-style: none;
     padding: 0;
-    margin-top: 1rem;
+    margin-top: .8rem;
     font-size: .875rem;
 }
 .profile-links a { text-decoration: none; }
@@ -126,7 +126,7 @@ a { transition: color 150ms ease; }
 }
 .about h2 { padding-top: .15rem; }
 .about p + p { margin-top: .7rem; }
-.about-copy { max-width: 92ch; }
+.about-copy { max-width: 92ch; text-wrap: pretty; }
 .about-copy a { text-decoration-color: #b5c7d1; }
 .about-copy .collaboration-note { color: var(--accent); font-weight: 600; }
 .research-interests {
@@ -144,7 +144,9 @@ a { transition: color 150ms ease; }
 .career { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2rem; }
 .career-list { list-style: none; padding: .5rem 0 0; font-size: .9rem; }
 .career-list li + li { margin-top: .85rem; }
-.career-list span { display: block; }
+.career-list span { display: block; line-height: 1.55; }
+.career-list strong { display: block; margin-bottom: .15rem; }
+.career-list .timeline-date { margin-top: .2rem; }
 .career-list .timeline-date { font-size: .8rem; }
 
 .section-heading {
@@ -179,8 +181,8 @@ a { transition: color 150ms ease; }
 
 .publication { padding-block: .6rem; border-bottom: 1px solid var(--rule); }
 .publication-title { margin-block: 0 .15rem; font-size: 1rem; font-weight: 600; line-height: 1.4; text-wrap: pretty; }
-.publication-title a { color: inherit; text-decoration-color: var(--rule); }
-.publication-title a:hover { color: var(--accent); text-decoration-color: currentColor; }
+.publication-title a { color: inherit; text-decoration: none; }
+.publication-title a:hover { color: var(--accent); text-decoration: underline; }
 .publication-venue { margin-top: .1rem; color: var(--accent); font-size: .84rem; font-weight: 500; line-height: 1.5; }
 .publication-note { margin-left: .65rem; color: var(--muted); font-size: .8rem; font-weight: 400; white-space: nowrap; }
 .publication-authors { color: var(--muted); font-size: .84rem; line-height: 1.5; }
@@ -207,7 +209,8 @@ a { transition: color 150ms ease; }
 }
 .timeline-date, .muted { color: var(--muted); }
 .timeline-date { font-size: .85rem; font-variant-numeric: tabular-nums; }
-.timeline li { grid-template-columns: 6rem minmax(0, 1fr); gap: .1rem 1rem; padding-block: .3rem; align-items: baseline; font-size: .925rem; line-height: 1.5; }
+.timeline li { grid-template-columns: 6rem minmax(0, 1fr); gap: .1rem 1rem; padding-block: .35rem; align-items: baseline; font-size: .925rem; line-height: 1.55; }
+.timeline li > div { text-wrap: pretty; }
 .experience-list li, .post-list li { grid-template-columns: 10rem minmax(0, 1fr); }
 .more-details { margin-top: .85rem; }
 .more-details summary { width: fit-content; cursor: pointer; color: var(--accent); font-weight: 600; }
@@ -234,7 +237,7 @@ a { transition: color 150ms ease; }
 }
 .detail-list li + li { margin-top: .9rem; }
 .detail-main { min-width: 0; }
-.detail-title { display: block; font-size: .925rem; font-weight: 500; line-height: 1.5; }
+.detail-title { display: block; font-size: .925rem; font-weight: 500; line-height: 1.5; text-wrap: pretty; }
 .detail-meta { display: block; margin-top: .15rem; color: var(--muted); font-size: .8125rem; line-height: 1.55; }
 .detail-date { color: var(--muted); font-size: .8125rem; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .competition-result { white-space: nowrap; }
@@ -278,7 +281,9 @@ a { transition: color 150ms ease; }
     .news-scroll { max-height: min(24rem, 60svh); }
     .section-tools { gap: .25rem .65rem; }
     .site-width { width: calc(100% - 2rem); }
-    .intro { grid-template-columns: clamp(4.25rem, 20vw, 7rem) minmax(0, 1fr); }
+    .intro { grid-template-columns: clamp(4.25rem, 20vw, 7rem) minmax(0, 1fr); gap: 1.1rem; align-items: start; }
+    .intro-heading { min-width: 0; }
+    .intro h1 { font-size: clamp(1.75rem, 7vw, 2.1rem); }
     .profile-role { font-size: .95rem; }
     .profile-links { column-gap: .7rem; font-size: .82rem; }
     .about { grid-template-columns: minmax(0, 1fr); }
