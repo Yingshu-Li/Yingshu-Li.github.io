@@ -16,7 +16,7 @@ main_class: home-layout
         </ul>
         <p class="profile-role">PhD Candidate, The University of Sydney</p>
         <ul class="profile-links">
-            <li><button class="email-copy" type="button" data-copy-email="{{ profile.email | escape }}" aria-label="Copy email address: {{ profile.email | escape }}" title="Copy {{ profile.email | escape }}"><span data-copy-label>{{ profile.email | escape }}</span></button></li>
+            <li><button class="email-copy" type="button" data-copy-email="{{ profile.email | escape }}" aria-label="Copy email address: {{ profile.email | escape }}" title="Copy {{ profile.email | escape }}"><span data-copy-label>Email ({{ profile.email | escape }})</span></button></li>
             <li><a href="https://scholar.google.com/citations?user={{ profile.gscholar }}">Google Scholar</a></li>
             <li><a href="https://www.linkedin.com/in/{{ profile.linkedin }}/">LinkedIn</a></li>
             <li><a href="https://twitter.com/{{ profile.twitter }}">X</a></li>

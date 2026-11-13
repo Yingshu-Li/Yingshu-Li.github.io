@@ -3,6 +3,7 @@
     if (!button) return;
 
     const label = button.querySelector('[data-copy-label]');
+    const defaultLabel = label.textContent;
     const status = document.querySelector('[data-copy-status]');
     const fallback = document.querySelector('[data-copy-fallback]');
     const address = fallback.querySelector('input');
@@ -17,9 +18,9 @@
             fallback.hidden = true;
             label.textContent = 'Copied';
             status.textContent = 'Email address copied to clipboard.';
-            resetTimer = setTimeout(() => { label.textContent = button.dataset.copyEmail; }, 2500);
+            resetTimer = setTimeout(() => { label.textContent = defaultLabel; }, 2500);
         } catch {
-            label.textContent = button.dataset.copyEmail;
+            label.textContent = defaultLabel;
             fallback.hidden = false;
             status.textContent = 'Automatic copying is unavailable. Select and copy the email address below.';
             address.focus();
