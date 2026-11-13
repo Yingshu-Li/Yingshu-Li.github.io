@@ -73,3 +73,16 @@ If you run into **any** issues while using this template, or have suggestions fo
 
 3. Navigate to your created website, and follow the instructions displayed on the homepage (if any) to finalize the setup.
 
+
+## Writing a blog post
+
+Add a Markdown file to `_posts/` named `YYYY-MM-DD-title.md`. Give it a title and, optionally, a short description for the blog index.
+
+```yaml
+---
+title: "Your post title"
+description: "A short summary for the blog index."
+---
+```
+
+Write the article below the front matter. Jekyll adds it to `/blog/` and shows the three newest posts on the homepage. Use `_drafts/` for unpublished posts and preview them locally with `bundle exec jekyll serve --drafts`.

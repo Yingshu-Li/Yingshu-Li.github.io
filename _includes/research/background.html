@@ -1,0 +1,41 @@
+<div class="background home-section">
+    <section>
+        <h2>Honors &amp; Awards</h2>
+        <ul class="detail-list">
+            {% for item in site.data.profile.awards %}
+            <li><div class="detail-main"><span class="detail-title">{{ item.name }}</span></div><span class="detail-date">{{ item.date }}</span></li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section>
+        <h2>Teaching Assistant</h2>
+        <ul class="detail-list">
+            {% for item in site.data.teaching %}
+            {% assign course_code = item.course | split: ' ' | first %}
+            <li>
+                <div class="detail-main"><span class="detail-title">{{ item.course | remove_first: course_code | strip }}</span><span class="detail-meta">{{ course_code }}</span></div>
+                <span class="detail-date">{{ item.semester | replace: '-', '–' }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section>
+        <h2>Academic Service</h2>
+        <ul class="detail-list">
+            {% for item in site.data.services %}
+            <li><div class="detail-main"><span class="detail-title">{{ item.name }}</span><span class="detail-meta">{{ item.description }}</span></div>{% if item.date %}<span class="detail-date">{{ item.date }}</span>{% endif %}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section>
+        <h2>Competitions</h2>
+        <ul class="detail-list">
+            {% for item in site.data.competition %}
+            <li>
+                <div class="detail-main"><span class="detail-title">{{ item.name | remove_first: 'Kaggle: ' }}</span><span class="detail-meta">Kaggle <span aria-hidden="true">·</span> <span class="competition-result">{{ item.rank }}</span></span></div>
+                <span class="detail-date">{{ item.date }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>

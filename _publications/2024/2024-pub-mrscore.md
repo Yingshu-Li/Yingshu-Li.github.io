@@ -1,6 +1,7 @@
 ---
 title:          "MRScore: Evaluating Radiology Report Generation with LLM-based Reward System"
 date:           2024-10-4 00:01:00 +0800
+short_venue: "MICCAI"
 selected:       true
 pub:            "International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)"
 # pub_pre:        "Submitted to "
@@ -19,5 +20,5 @@ authors:
   - Lingqiao Liu
   - Luping Zhou
 links:
-  Paper: https://arxiv.org/abs/2411.17301
+  Paper: https://arxiv.org/abs/2404.17778
 ---

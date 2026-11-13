@@ -19,17 +19,33 @@ twitter: yingshu_l  # Do not include the '@' symbol
 linkedin: yingshu-li
 # orcid: 0000-0000-0000-0000
 
-short_bio_text_justify: false
+description: "Yingshu Li is a PhD candidate at the University of Sydney working on AI agents, AI4Health, multimodal large language models, and radiology vision-language systems."
+research_interests:
+  - "AI Agents & AI4Health"
+  - "Multimodal Large Language Model"
+  - "Radiology Vision-language System"
 short_bio: >-
   <p>
-    I'm Yingshu Li (李英舒), a final-year Ph.D. candidate at the University of Sydney, supervised by <a href="https://sites.google.com/view/lupingzhou" target="_blank">Prof. Luping Zhou</a>. During my PhD, I have also been fortunate to receive mentorship from <a href="https://sites.google.com/view/lei-hs-wang" target="_blank">Prof. Lei Wang</a> and <a href="https://lingqiao-adelaide.github.io/lingqiaoliu.github.io/" target="_blank">Prof. Lingqiao Liu</a>. My research centres on multi-modal large language models (MLLMs), computer vision, and medical imaging analysis — in particular radiology report generation and large multimodal embedding models — with work published at CVPR, AAAI, ECCV, ACM MM, MICCAI, IEEE TMI, MedIA, and Meta-Radiology. Prior to my PhD, I received my Master’s degree from the University of Sydney.
+    I’m a final-year PhD candidate in the School of Electrical and Computer Engineering at the University of Sydney, advised by
+    <a href="https://sites.google.com/view/lupingzhou">Luping Zhou</a>, with mentorship from
+    <a href="https://sites.google.com/view/lei-hs-wang">Lei Wang</a> and
+    <a href="https://lingqiao-adelaide.github.io/lingqiaoliu.github.io/">Lingqiao Liu</a>.
+    I also received my master’s degree from the University of Sydney.
   </p>
-
   <p>
-    Alongside my academic work, I interned at TikTok (Trust &amp; Safety), building scalable LLM training frameworks and training MLLM-based embedding models for large-scale video content governance. I am currently on the job market for <strong>Applied Scientist, Research Scientist, and Machine Learning Engineer</strong> roles, and am equally open to <strong>postdoctoral</strong> positions.
+    My research interests span <strong>multimodal large language models, AI agents, and AI for healthcare</strong>.
+    I’m interested in how AI systems understand multimodal information, follow instructions, and reason across tasks and domains.
+    My work includes multimodal embeddings, model evaluation, and medical vision–language systems, with radiology report generation as one application.
+    More broadly, I aim to develop capable and reliable multimodal AI for both healthcare and real-world applications.
   </p>
-
-  <strong>Happy to research chats and collabs — feel free to email me!</strong>
+  <p>
+    Alongside my academic research, I interned with <strong>TikTok Trust &amp; Safety</strong>, where I built scalable LLM training frameworks and trained multimodal video embedding models for large-scale content governance.
+    I also spent time as a research intern at the University of Illinois Urbana-Champaign.
+  </p>
+  <p>
+    I’m currently exploring opportunities as an <strong>Applied Scientist, Research Scientist, or Machine Learning Engineer</strong>, as well as <strong>postdoctoral positions</strong>.
+    I welcome research discussions and collaborations in multimodal learning, AI agents, and AI4Health.
+  </p>
 portrait_url: /assets/images/badges/self.jpg
 
 education:

@@ -1,3 +1,7 @@
+- name: "Workshop Organization"
+  description: "MedAI-CHAS: Challenges, Hallucinations, and Solutions for Advancing Clinical Utility in Medical AI"
+  date: "DICTA 2025"
+
 - name: "Conference Review"
   description: "CVPR, NeurIPS, ECCV, ICCV, MICCAI"
   icon: "fas fa-file-alt"

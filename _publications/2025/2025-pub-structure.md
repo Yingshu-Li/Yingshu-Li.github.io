@@ -1,6 +1,7 @@
 ---
 title:          "S-RRG-Bench: Structured Radiology Report Generation with Fine-Grained Evaluation Framework"
 date:           2025-8-02 00:01:00 +0800
+short_venue: "Meta-Radiology"
 selected:       true
 pub:            "Meta-Radiology"
 pub_date:       "2025"
@@ -15,5 +16,5 @@ authors:
 - Lei Wang
 - Luping Zhou
 links:
-  # Paper: https://www.sciencedirect.com/science/article/pii/S2950162824000535
+  Paper: https://arxiv.org/abs/2508.02082
 ---

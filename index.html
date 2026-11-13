@@ -1,57 +1,99 @@
 ---
-layout: default
-title : Homepage
+layout: research
+title: Home
 navbar_title: Home
+main_class: home-layout
 ---
-{% include widgets/profile_card.html %}
-
-{% include widgets/debug_repo_name.html %}
-
-{% include widgets/debug_url.html %}
-
-{% if site.data.display.homepage.show_experience %}
-    {% include widgets/experience_card.html %}
-{% endif %}
-
-{% if site.data.display.homepage.show_news %}
-    {% assign count_news = site.news | size %}
-    {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-    {% endif %}
-{% endif %}
-
-{% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {% 
-        include widgets/publication_card.html 
-        publications=pubs
-        title='<i class="fas fa-book"></i> Publications'
-        limit=site.data.display.homepage.num_selected_publications
-    %}
-{% endif %}
-
-{% if site.data.display.homepage.show_competition %}
-    {% include widgets/competition_card.html %}
-{% endif %}
-
-{% if site.data.display.homepage.show_services %}
-    {% include widgets/services_card.html %}
-{% endif %}
-
-{% if site.data.display.homepage.show_teaching %}
-    {% include widgets/teaching_card.html %}
-{% endif %}
-
-<!-- ClustrMaps visitor tracking -->
-<div class="text-center mt-4 mb-3">
-    <div style="max-width: 400px; margin: 0 auto;">
-        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=2bb9d6&w=a&t=n&d=I3EQUYZtK-x1ZLxqq172i6zk1-yBjwg3-ipSDQjIk5A&co=ffffff'></script>
+{% assign profile = site.data.profile %}
+<section class="intro" aria-labelledby="intro-title">
+    <img class="portrait" src="{{ profile.portrait_url | relative_url }}" width="1606" height="1728" alt="Portrait of {{ profile.primary_name }}">
+    <div class="intro-heading">
+        <h1 id="intro-title">{{ profile.primary_name }}</h1>
+        <ul class="research-interests" aria-label="Research interests">
+            {% for interest in profile.research_interests %}
+            <li>{{ interest | escape }}</li>
+            {% endfor %}
+        </ul>
+        <p class="profile-role">PhD Candidate, The University of Sydney</p>
+        <ul class="profile-links">
+            <li><a href="mailto:{{ profile.email | encode_email }}">Email</a></li>
+            <li><a href="https://scholar.google.com/citations?user={{ profile.gscholar }}">Google Scholar</a></li>
+            <li><a href="https://www.linkedin.com/in/{{ profile.linkedin }}/">LinkedIn</a></li>
+            <li><a href="https://twitter.com/{{ profile.twitter }}">X</a></li>
+        </ul>
     </div>
-</div>
+</section>
 
-<style>
-#clustrmaps {
-    transform: scale(0.9);
-    transform-origin: center;
-}
-</style>
+<div class="home-content">
+    <section class="home-section about" aria-labelledby="about-title">
+        <h2 id="about-title">About Me</h2>
+        <div class="about-copy">{{ profile.short_bio }}</div>
+    </section>
+
+    <div class="career home-section">
+        <section id="experience" aria-labelledby="experience-title">
+            <div class="section-heading"><h2 id="experience-title">Experience</h2></div>
+            <ul class="career-list">
+                {% for item in profile.experience %}
+                <li><strong>{{ item.name }}</strong><span>{{ item.position }}</span><span class="timeline-date">{{ item.date }}</span></li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section id="education" aria-labelledby="education-title">
+            <div class="section-heading"><h2 id="education-title">Education</h2></div>
+            <ul class="career-list">
+                {% for item in profile.education %}
+                <li><strong>{{ item.name }}</strong><span>{{ item.position }}</span><span class="timeline-date">{{ item.date }}</span></li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+
+    <section class="home-section" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+            <h2 id="research-title">Selected Papers</h2>
+            <a href="{{ '/publications' | relative_url }}">All publications</a>
+        </div>
+        {% assign years = site.publications | where: 'selected', true | group_by: 'pub_date' | sort: 'name' | reverse %}
+        {% assign remaining = 8 %}
+        {% for year in years %}
+            {% assign papers = year.items | sort: 'date' | reverse %}
+            {% for paper in papers limit:remaining %}
+                {% include widgets/publication_item.html item=paper featured=true %}
+            {% endfor %}
+            {% assign remaining = remaining | minus: papers.size %}
+            {% if remaining <= 0 %}{% break %}{% endif %}
+        {% endfor %}
+    </section>
+
+    <section class="home-section" id="news" aria-labelledby="news-title">
+        <div class="section-heading"><h2 id="news-title">News</h2></div>
+        {% assign news = site.news | sort: 'date' | reverse %}
+        <ul class="timeline">
+            {% for entry in news limit:5 %}
+            {% include research/news_item.html entry=entry %}
+            {% endfor %}
+        </ul>
+        {% if news.size > 5 %}
+        <details class="more-details">
+            <summary>Earlier updates</summary>
+            <ul class="timeline">
+                {% for entry in news offset:5 %}
+                {% include research/news_item.html entry=entry %}
+                {% endfor %}
+            </ul>
+        </details>
+        {% endif %}
+    </section>
+
+    {% if site.posts.size > 0 %}
+    <section class="home-section" aria-labelledby="blog-title">
+        <div class="section-heading">
+            <h2 id="blog-title">Latest from the Blog</h2>
+            <a href="{{ '/blog/' | relative_url }}">All posts</a>
+        </div>
+        {% include research/post_list.html posts=site.posts limit=3 %}
+    </section>
+    {% endif %}
+    {% include research/background.html %}
+</div>

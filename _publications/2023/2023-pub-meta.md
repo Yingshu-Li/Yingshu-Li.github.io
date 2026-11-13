@@ -1,6 +1,7 @@
 ---
 title:          "A Systematic Evaluation of GPT-4V‘s Multimodal Capability for Medical Image Analysis"
 date:           2023-11-04 00:01:00 +0800
+short_venue: "Meta-Radiology"
 selected:       true
 pub:            "Meta-Radiology"
 pub_date:       "2024"
@@ -16,5 +17,6 @@ authors:
 - Longyue Wang
 - Luping Zhou
 links:
-  Paper: https://www.sciencedirect.com/science/article/pii/S2950162824000535
+  Paper: https://arxiv.org/abs/2310.20381
+  Journal: https://www.sciencedirect.com/science/article/pii/S2950162824000535
 ---

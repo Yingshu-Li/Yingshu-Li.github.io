@@ -1,0 +1,11 @@
+<ul class="post-list">
+    {% for post in include.posts limit:include.limit %}
+    <li>
+        <time class="timeline-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+        <div>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+            {% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>

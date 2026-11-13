@@ -8,6 +8,10 @@ pub:            "European Conference on Computer Vision (ECCV)"
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Early Accept</span>'
 pub_date:       "2026"
 
+highlight_order: 3
+short_venue: "ECCV"
+highlight_summary: "Finds and integrates high-resolution patches of chest X-rays to capture lesions in generated reports."
+
 authors:
   - <strong>Yingshu Li</strong>
   - Yunyi Liu
@@ -17,4 +21,6 @@ authors:
   - Lingqiao Liu
   - Lei Wang
   - Luping Zhou
+links:
+  Paper: https://arxiv.org/abs/2607.06909
 ---

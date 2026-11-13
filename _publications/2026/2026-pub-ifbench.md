@@ -8,6 +8,10 @@ pub:            "ACM International Conference on Multimedia (ACM MM)"
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Early Accept</span>'
 pub_date:       "2026"
 
+highlight_order: 2
+short_venue: "ACM MM"
+highlight_summary: "Tests whether video embedding models can change which video they retrieve when the instruction changes."
+
 authors:
   - <strong>Yingshu Li</strong>
   - Zhanyu Wang
@@ -15,4 +19,5 @@ authors:
   - Chen Tang
   - Shen Wang
   - Luping Zhou
+links: {}
 ---

@@ -1,6 +1,7 @@
 ---
 title:          "A Review of Longitudinal Radiology Report Generation: Dataset Composition, Methods, and Performance Evaluation"
 date:           2026-9-6 00:01:00 +0800
+short_venue: "MedIA"
 selected:       true
 pub:            "Medical Image Analysis (MedIA)"
 # pub_pre:        "Submitted to "

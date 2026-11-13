@@ -1,6 +1,7 @@
 ---
 title:          "KARGEN: Knowledge-Enhanced Automated Radiology report generation using large language models"
 date:           2024-10-4 00:01:00 +0800
+short_venue: "MICCAI"
 selected:       true
 pub:            "International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)"
 # pub_pre:        "Submitted to "
