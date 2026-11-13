@@ -9,11 +9,3 @@
 - name: "Journal reviewer"
   description: "IEEE TMI, IEEE JBHI, MedIA, Meta-Radiology"
   icon: "fas fa-journal-whills"
-  
-# - name: "Technical Consulting"
-#   description: "Providing technical expertise and consultation services"
-#   icon: "fas fa-cogs"
-  
-# - name: "Academic Mentoring"
-#   description: "Mentoring undergraduate and graduate students in research projects"
-#   icon: "fas fa-chalkboard-teacher"

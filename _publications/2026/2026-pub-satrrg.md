@@ -3,14 +3,9 @@ title:          "SAT-RRG: LLM-Guided Self-Adaptive Training for Radiology Report
 date:           2026-2-26 00:01:00 +0800
 selected:       true
 pub:            "Conference on Computer Vision and Pattern Recognition (CVPR)"
-# pub_pre:        "Submitted to "
-# pub_post:       'Under review.'
-# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Early Accept</span>'
 pub_date:       "2026"
 
-highlight_order: 4
 short_venue: "CVPR"
-highlight_summary: "Uses LLM-guided feedback and token-level optimization to adapt training for radiology report generation."
 
 authors:
   - Yunyi Liu*

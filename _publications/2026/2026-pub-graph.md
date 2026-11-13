@@ -4,9 +4,6 @@ date:           2026-7-10 00:01:00 +0800
 short_venue: "ACM MM"
 selected:       true
 pub:            "ACM International Conference on Multimedia (ACM MM)"
-# pub_pre:        "Submitted to "
-# pub_post:       'Under review.'
-# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Early Accept</span>'
 pub_date:       "2026"
 
 authors:

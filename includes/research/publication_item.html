@@ -5,7 +5,7 @@
         <h3 class="publication-title">
             {% if paper_url %}<a href="{{ paper_url | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}
         </h3>
-        <p class="publication-authors">{% include widgets/author_list.html authors=paper.authors %}</p>
+        <p class="publication-authors">{% include research/author_list.html authors=paper.authors %}</p>
         <p class="publication-venue">
             {{ paper.pub_pre }}{{ paper.short_venue | default: paper.pub }}{{ paper.pub_post }} <span aria-hidden="true">·</span> {{ paper.pub_date }}{% if paper.pub_last %}<span class="publication-note">{{ paper.pub_last | strip_html | strip }}</span>{% endif %}
         </p>

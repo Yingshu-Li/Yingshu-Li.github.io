@@ -5,9 +5,7 @@ selected:       true
 pub:            "Conference on Neural Information Processing Systems (NeurIPS)"
 pub_date:       "2026"
 
-highlight_order: 1
 short_venue: "NeurIPS"
-highlight_summary: "A benchmark for evaluating medical embeddings across different types of clinical evidence."
 
 authors:
   - <strong>Yingshu Li</strong>

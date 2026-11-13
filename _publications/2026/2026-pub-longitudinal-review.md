@@ -4,9 +4,6 @@ date:           2026-9-6 00:01:00 +0800
 short_venue: "MedIA"
 selected:       true
 pub:            "Medical Image Analysis (MedIA)"
-# pub_pre:        "Submitted to "
-# pub_post:       'Under review.'
-# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Early Accept</span>'
 pub_date:       "2026"
 
 authors:

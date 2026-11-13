@@ -3,14 +3,9 @@ title:          "IF-Bench: Evaluating Instruction Following in Video Embedding M
 date:           2026-7-10 00:02:00 +0800
 selected:       true
 pub:            "ACM International Conference on Multimedia (ACM MM)"
-# pub_pre:        "Submitted to "
-# pub_post:       'Under review.'
-# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Early Accept</span>'
 pub_date:       "2026"
 
-highlight_order: 2
 short_venue: "ACM MM"
-highlight_summary: "Tests whether video embedding models can change which video they retrieve when the instruction changes."
 
 authors:
   - <strong>Yingshu Li</strong>
