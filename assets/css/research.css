@@ -111,6 +111,7 @@ a { transition: color 150ms ease; }
 .about p + p { margin-top: .7rem; }
 .about-copy { max-width: 92ch; }
 .about-copy a { text-decoration-color: #b5c7d1; }
+.about-copy .collaboration-note { color: var(--accent); font-weight: 600; }
 .research-interests {
     display: flex;
     flex-wrap: wrap;

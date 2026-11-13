@@ -44,7 +44,9 @@ short_bio: >-
   </p>
   <p>
     I’m currently exploring opportunities as an <strong>Applied Scientist, Research Scientist, or Machine Learning Engineer</strong>, as well as <strong>postdoctoral positions</strong>.
-    I welcome research discussions and collaborations in multimodal learning, AI agents, and AI4Health.
+  </p>
+  <p class="collaboration-note">
+    I welcome <a href="mailto:yingshu.li@sydney.edu.au">research discussions and collaborations</a> in multimodal learning, AI agents, and AI4Health.
   </p>
 portrait_url: /assets/images/badges/self.jpg
 
