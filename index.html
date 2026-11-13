@@ -16,11 +16,17 @@ main_class: home-layout
         </ul>
         <p class="profile-role">PhD Candidate, The University of Sydney</p>
         <ul class="profile-links">
-            <li><a href="mailto:{{ profile.email | encode_email }}">Email</a></li>
+            <li><button class="email-copy" type="button" data-copy-email="{{ profile.email | escape }}" aria-label="Copy email address" title="Copy {{ profile.email | escape }}"><span data-copy-label>Email</span></button></li>
             <li><a href="https://scholar.google.com/citations?user={{ profile.gscholar }}">Google Scholar</a></li>
             <li><a href="https://www.linkedin.com/in/{{ profile.linkedin }}/">LinkedIn</a></li>
             <li><a href="https://twitter.com/{{ profile.twitter }}">X</a></li>
         </ul>
+        <span class="sr-only" role="status" data-copy-status></span>
+        <div class="email-copy-fallback" data-copy-fallback hidden>
+            <label for="email-address">Select and copy this email address:</label>
+            <input id="email-address" type="text" value="{{ profile.email | escape }}" readonly autocomplete="off" spellcheck="false">
+        </div>
+        <noscript><p class="email-copy-fallback">{{ profile.email | escape }}</p></noscript>
     </div>
 </section>
 

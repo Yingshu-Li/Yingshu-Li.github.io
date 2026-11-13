@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    {% if page.navbar_title == 'Home' %}<script src="{{ '/assets/js/copy-email.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>{% endif %}
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
